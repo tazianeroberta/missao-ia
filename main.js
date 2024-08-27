@@ -64,4 +64,10 @@ function respostaSelecionada (opcaoselecionada){
     mostraPergunta();
 }
 
+function mostraResultado(){
+    caixaPerguntas.textContent = "Sobre Voce";
+    textoResultado.textContent = historiafinal;
+    caixaAlternativas.textContent = "";
+ }
+
 mostraPergunta();
