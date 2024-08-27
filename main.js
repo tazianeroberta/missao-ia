@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "1- Pessoas estão usando as redes sociais para competir por relevância dentro de uma plataforma, onde usam de sua influência para divulgar produtos ou marcas queincentivam o consumismo ou o gasto exagerado de dinheiro. Qual sua opinião sobrejogos de azar online?",
+        enunciado: "1- Pessoas estão usando as redes sociais para competir por relevância dentro de uma plataforma, onde usam de sua influência para divulgar produtos ou marcas queincentivam o consumismo ou o gasto exagerado de dinheiro. Qual sua opinião sobre jogos de azar online?",
         alternativas:[
             { texto: "a- Acho absurdo e desnecessário, porque a influência dessas pessoas pode acabar atingindo pessoas que não tem o conhecimento necessário para utilizar tais meios de lucro, onde esses podem não ser concretos e prejudicar a vida dessas pessoas.", 
             afirmacao: "Esse comentário mostra que o autor se preocupa com as pessoas menos afortunadas ou que não tem certo controle do que fazem, priorizando a integridade e a veracidade de propagandas nas redes sociais."},
@@ -24,7 +24,7 @@ const perguntas = [
       afirmacao: "Entende que pode ser prejudicial pois pode desfavorecer alguns jogadores e “quebrar” com a experiencia do jogo" } ]
     },
     {
-        enunciado: "3- Sabemos que no mercado de jogos, existe um mercado interno criado para favorecer jogadores com itens pagos com dinheiro real, qual sua opinião sobre essa prática?",
+        enunciado: "3- Sabemos que no mercado de jogos, existe um mercado interno criado para favorecer jogadores com itens pagos com dinheiro real, qual sua opinião sobre essa prática?", 
         alternativas:[
             { texto: "a- Não gosto, pois as pessoas menos favorecidas financeiramente não podem usufruir de tais itens mesmo tendo habilidades para possuírem através de conquistas dentro do jogo, em vez de precisarem de dinheiro real.", 
             afirmacao: "A pessoa acha injusto ter que pagar por algo que deveria ser conquistado com habilidades."},
@@ -34,19 +34,19 @@ const perguntas = [
     }
    
    
-
+   
 ]
 
 let atual = 0;
 let perguntaAtual;
 let historiafinal = "";
 
-
 function mostraPergunta(){
 if(atual >= perguntas.length){
     mostraResultado();
     return;
 }
+
 
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
@@ -77,3 +77,4 @@ function mostraResultado(){
  }
 
 mostraPergunta();
+
